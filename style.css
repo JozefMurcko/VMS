@@ -1,0 +1,138 @@
+body {
+  font-family: 'Roboto';
+  color: white;
+  margin: 0;
+  overflow-x: hidden; }
+
+body > section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+img {
+  max-width: 250px;
+  display: inline; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 1px 1px 0px black; }
+
+#home-section {
+  background-color: #2878d9; }
+  #home-section h1 {
+    margin: 0;
+    font-size: 5em; }
+  #home-section p {
+    margin: 0;
+    font-size: 2em; }
+  #home-section div #error {
+    display: none;
+    background-color: #d92828;
+    height: 40px;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    width: 610px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px; }
+  #home-section div form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; }
+    #home-section div form input {
+      font-size: 2em;
+      height: 60px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      border: 3px solid #185094;
+      min-width: 550px;
+      box-sizing: border-box; }
+    #home-section div form button {
+      font-size: 2em;
+      height: 60px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      border: 3px solid #185094;
+      box-sizing: border-box;
+      border-left: none;
+      color: white;
+      background: #185094;
+      vertical-align: middle;
+      line-height: 1em;
+      transition: all 0.25s;
+      cursor: pointer;
+      width: 60px; }
+      #home-section div form button:hover {
+        background: #206cc7; }
+  #home-section div #autocomplete {
+    display: none;
+    background-color: #fafafa;
+    color: #5f5f5f;
+    max-height: 230px;
+    overflow-y: auto;
+    width: 610px;
+    position: absolute; }
+    #home-section div #autocomplete.open {
+      display: block; }
+    #home-section div #autocomplete .autocomplete-item {
+      cursor: pointer;
+      height: 40px;
+      padding: 0 20px;
+      border-bottom: 1px solid gainsboro;
+      display: flex;
+      align-items: center;
+      transition: all 0.25s; }
+      #home-section div #autocomplete .autocomplete-item:hover {
+        background-color: #e2e2e2; }
+
+#map-section {
+  background-color: #278eff; }
+  #map-section h2 {
+    font-size: 3em;
+    display: block;
+    max-width: 900px; }
+  #map-section .container {
+    max-width: 900px;
+    max-height: 600px;
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 5px 5px 15px #0000005c;
+    color: black;
+    display: flex; }
+    #map-section .container .sidebar {
+      width: 30%;
+      background-color: #fafafa;
+      box-sizing: border-box;
+      padding: 20px;
+      box-shadow: 3px 0px 8px #00000038; }
+      #map-section .container .sidebar h3 {
+        color: #757575;
+        margin: 0;
+        text-shadow: none;
+        font-size: 1.5em; }
+      #map-section .container .sidebar ul {
+        margin-left: 0;
+        padding-left: 20px;
+        list-style: square;
+        font-weight: 300;
+        margin-top: 0; }
+        #map-section .container .sidebar ul li {
+          padding-top: 20px; }
+    #map-section .container .map {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #map-section .container .map .svg {
+        width: 90%; }
+
+/*# sourceMappingURL=style.css.map */

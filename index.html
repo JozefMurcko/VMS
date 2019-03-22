@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Virtuálna mapa školy</title>
+</head>
+<body>
+<section id="home-section">
+    <img src="https://www.spseke.sk/skola/images/skola/logo_spse_far.png">
+    <h1>Virtuálna mapa školy</h1>
+    <p>Najdi si svoju učebňu, kabinet učiteľa, toalety alebo výťah hneď teraz!</p>
+    <div>
+        <div id="error">Niečo sa pokazilo.</div>
+        <!--onsubmit=return true riesi to aby sa pri submitnuti formu nereloadovala stranka-->
+        <form onsubmit="return false">
+            <input type="text" id="search" placeholder="Zadajte meno alebo učebňu..." aria-label="Hľadať">
+            <button id="search-btn" onclick="searchSubmitBtnHandler()">🔍</button>
+        </form>
+        <div id="autocomplete"></div>
+    </div>
+
+
+</section>
+<!--Cela sekcia je defaultne schovana display:none a zobrazuje sa az po prvom vyhladani niecoho-->
+<section id="map-section" style="display: none">
+    <h2 id="map-section-title"></h2>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Informácie o miestnosti</h3>
+            <ul>
+                <li>Názov miestnosti: <strong id="room-name">-</strong></li>
+                <li>Číslo miestnosti: <strong id="room-number">-</strong></li>
+                <li>Poschodie: <strong id="room-floor">-</strong></li>
+                <li>Poznámka: <strong id="room-description">-</strong></li>
+            </ul>
+        </div>
+        <div class="map">
+            <object id="floorMap" name="test" type="image/svg+xml" data="" class="svg"></object>
+        </div>
+    </div>
+</section>
+</body>
+</html>
